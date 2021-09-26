@@ -16,6 +16,11 @@ nav {
     background: lightcoral;
 }
 
+#icono {
+    height: 50px;
+    width: auto;
+}
+
 header {
     background-image: url("Jumbotron2.png");
     height: 500px;
