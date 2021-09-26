@@ -1,0 +1,25 @@
+/* Hoja de estilos */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(143, 142, 142);   
+    
+}
+
+nav {
+    display: flex;
+    height: 50px;
+    width: auto;
+    background: lightcoral;
+}
+
+header {
+    background-image: url("Jumbotron2.png");
+    height: 500px;
+    width: auto;
+    background-size: 144%;
+    opacity: 0.65;
+}
