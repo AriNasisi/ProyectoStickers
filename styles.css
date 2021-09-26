@@ -9,22 +9,85 @@ body {
     
 }
 
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 50px 600px auto 100px;
+    grid-template-areas: "navbar navbar navbar"
+                        "jumbo jumbo jumbo"
+                        ". main ."
+                        "footer footer footer"
+}
+
 nav {
     display: flex;
+    justify-content: space-between;
     height: 50px;
     width: auto;
-    background: lightcoral;
+    background: rgb(39, 39, 39);
+    grid-area: navbar;
 }
 
 #icono {
-    height: 50px;
+    height: 100px;  
     width: auto;
+    z-index: 4;
+    overflow: auto;
+}
+
+nav > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50 px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    
+
+}
+
+.navbar {
+    padding-right: 15px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.navbar:hover {
+    /* text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; */
+    color: lightcoral;
+
 }
 
 header {
+    grid-area: jumbo;
+}
+
+.header {
     background-image: url("Jumbotron2.png");
-    height: 500px;
+    height: 600px;
     width: auto;
     background-size: 144%;
-    opacity: 0.65;
+    opacity: 0.5;
+    z-index: 1;
+    
+    
+}
+
+.titulo {
+    font-family: 'Bangers', cursive;
+    color: white;
+    font-size: 100px;
+    /* font-weight: bold; */
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    position: absolute;
+    z-index: 2;    
+    padding: 2em;
+
+}
+
+main {
+    background-color: rgba(78, 78, 78, 0.863);
+    grid-area: main;
 }
