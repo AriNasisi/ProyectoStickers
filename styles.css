@@ -95,6 +95,36 @@ header {
 }
 
 main {
-    background-color: rgba(78, 78, 78, 0.863);
     grid-area: main;
+}
+
+.cuadro {
+    height: auto;
+    background-color: rgba(78, 78, 78, 0.863);
+    border-radius: 15px;
+    box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.6);
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    padding: 3vw;
+}
+
+.imagenes {
+    /* width: 80%; */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.comprar {
+    text-align: center;
+    padding: 10px 20px;
 }
