@@ -12,7 +12,7 @@ body {
 .gridcontainer {
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 50px 600px auto 100px;
+    grid-template-rows: 50px 95vh auto 100px;
     grid-template-areas: "navbar navbar navbar"
                         "jumbo jumbo jumbo"
                         ". main ."
@@ -26,13 +26,21 @@ nav {
     width: auto;
     background: rgb(39, 39, 39);
     grid-area: navbar;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 #icono {
-    height: 100px;  
+    height: 90px;  
     width: auto;
     z-index: 4;
     overflow: auto;
+}
+
+.saturn {
+    position: relative;
+    left: 3vw;
 }
 
 nav > div {
@@ -40,22 +48,22 @@ nav > div {
     justify-content: center;
     align-items: center;
     height: 50 px;
-    padding-left: 100px;
-    padding-right: 100px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
 
     
 
 }
 
 .navbar {
-    padding-right: 15px;
+    padding: 3vw;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 .navbar:hover {
-    /* text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; */
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
     color: lightcoral;
 
 }
@@ -65,14 +73,13 @@ header {
 }
 
 .header {
-    background-image: url("Jumbotron2.png");
-    height: 600px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #8f8e8e), url("Jumbotron2.png");
+    /* background: linear-gradient(#e66465, #9198e5); */
+    height: 95vh;
     width: auto;
-    background-size: 144%;
+    background-size: 147%;
     opacity: 0.5;
     z-index: 1;
-    
-    
 }
 
 .titulo {
@@ -83,8 +90,8 @@ header {
     text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
     position: absolute;
     z-index: 2;    
-    padding: 2em;
-
+    top: 17vw;
+    left: 18vw;
 }
 
 main {
