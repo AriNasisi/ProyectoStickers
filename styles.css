@@ -128,3 +128,8 @@ main {
     text-align: center;
     padding: 10px 20px;
 }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
