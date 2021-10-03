@@ -168,6 +168,27 @@ a {
     border-radius: 12px;
 }
 
+
+
+ul {
+    list-style-type: none;
+    color: white;
+    
+    
+}
+
+li {
+    padding: 2px;
+}
+
+.gridCatalogo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "lista stickersCatalogo";
+}
+
+
+
 .listita {
     font-family: 'Roboto', sans-serif;
     width: 180px;
@@ -177,16 +198,80 @@ a {
     border-radius: 15px;
     box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.6);
     position: sticky;
+    top: 80px;
+    grid-area: lista;
+    height: 490px;
+    grid-area: lista;
 
 }
 
-ul {
-    list-style-type: none;
+.tituloID {
+    font-family: 'Roboto', sans-serif;
     color: white;
-    
-    
+    font-size: 30px;
+    margin-top: 20px;  
+
 }
 
+.lineaStickers {
+    grid-area: stickersCatalogo;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagenesCat {
+    height: 350px;
+    width: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin-top: 2vw;
+    width: 15%;
+ 
+}
+
+
+@media only screen and (max-width: 500px) {
+    .gridCatalogo {
+        
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "lista" 
+                        "stickersCatalogo";
+    }
+
+    .listita {
+        font-family: 'Roboto', sans-serif;
+        width: 80vw;
+        margin: 4vw;
+        padding: 1vw;
+        background-color: rgba(78, 78, 78, 0.863);
+        border-radius: 15px;
+        box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.6);
+        position:unset;
+        top: 80px;
+        grid-area: lista;
+        height: 490px;
+        grid-area: lista;
+        text-align: center;
+    
+    }
+
+    .imagenesCat {
+        
+        height: 90vw;
+        width: auto;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        margin-top: 2vw;
+        width: 40%;
+     
+    }
+
+}
+    
 li {
     padding: 2px;
 }
@@ -210,18 +295,18 @@ li {
 
 .imagenes2 {
     display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    height: 450px;
+    height: 440px;
 }
 .imagenes3 {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    height: 450px;
+    height: 440px;
 }
 
 .imagen2 {
