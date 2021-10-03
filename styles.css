@@ -227,5 +227,11 @@ li {
 .imagen2 {
     width: 25vw;
     height: 30vw;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+} 
+
+.imagen3 {
+    width: 25vw;
+    height: 30vw;
+    border-radius: 10px 10px 0px 0px;
 } 
