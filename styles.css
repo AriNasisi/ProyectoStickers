@@ -15,7 +15,7 @@ body {
     grid-template-rows: 50px 95vh auto 100px;
     grid-template-areas: "navbar navbar navbar"
                         "jumbo jumbo jumbo"
-                        ". main ."
+                        "main main main"
                         "footer footer footer"
 }
 
@@ -50,9 +50,6 @@ nav > div {
     height: 50 px;
     /* padding-left: 100px;
     padding-right: 100px; */
-
-    
-
 }
 
 .navbar {
@@ -94,8 +91,21 @@ header {
     left: 18vw;
 }
 
-main {
+main{
     grid-area: main;
+}
+
+.gridcontainer2 {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto 50px auto;
+    grid-template-areas: ". main2 ."
+                        "empty empty empty"
+                        "client client client"
+}
+
+.novedades{
+    grid-area: main2;
 }
 
 .cuadro {
@@ -267,3 +277,48 @@ li {
 
 
 
+<<<<<<< HEAD
+=======
+li {
+    padding: 2px;
+}
+
+.clientes {
+    grid-area: client;
+    background-color: rgb(73, 73, 73);
+    height: 95vh;
+    width: auto;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.imagenes2 {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    height: 450px;
+}
+.imagenes3 {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    height: 450px;
+}
+
+.imagen2 {
+    width: 25vw;
+    height: 30vw;
+    border-radius: 10px 10px 10px 10px;
+} 
+>>>>>>> 80eaa0b224224228d5215d47425f2193c9e27215
