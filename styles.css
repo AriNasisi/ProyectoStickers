@@ -133,3 +133,26 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
+
+.listita {
+    font-family: 'Roboto', sans-serif;
+    width: 180px;
+    margin: 2vw;
+    padding: 1vw;
+    background-color: rgba(78, 78, 78, 0.863);
+    border-radius: 15px;
+    box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.6);
+    position: sticky;
+
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    
+    
+}
+
+li {
+    padding: 2px;
+}
