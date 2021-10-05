@@ -316,7 +316,8 @@ li {
 .clientes {
     grid-area: client;
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgb(48, 47, 47) 50%, rgba(255,255,255,0) 100%);
+    /* background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgb(48, 47, 47) 50%, rgba(255,255,255,0) 100%); */
+    background-image: url(fondos/5.jpg);
     height: 100vh;
     width: auto;
     font-family: 'Roboto', sans-serif;
@@ -349,6 +350,7 @@ li {
 
 .imagenes2:hover {
     transform: scale(1.1);
+    transition-duration: 1000ms;
 }
 
 .imagenes2 img {
