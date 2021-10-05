@@ -231,7 +231,7 @@ li {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .gridCatalogo {
         
         display: grid;
@@ -269,8 +269,46 @@ li {
      
     }
 
+    .listita {
+        font-family: 'Roboto', sans-serif;
+        width: 50vw;
+        margin: 4vw;
+        padding: 1vw;
+        background-color: rgba(78, 78, 78, 0.863);
+        border-radius: 15px;
+        box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.6);
+        position:unset;
+        top: 80px;
+        grid-area: lista;
+        height: 490px;
+        grid-area: lista;
+        text-align: center;
+    
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    
+    .imagenesCat {
+        
+        height: 50vw;
+        width: auto;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        margin-top: 2vw;
+        width: 30%;
+     
+    }
+
 }
     
+
+
+
+
+
 li {
     padding: 2px;
 }
@@ -361,6 +399,15 @@ li {
     color: rgb(248, 161, 103);
   }
 
+<<<<<<< HEAD
 .notchecked{
+=======
+.imagen2 {
+    width: 25vw;
+    height: 30vw;
+    border-radius: 10px 10px 10px 10px;
+} 
+  .notchecked{
+>>>>>>> 6ccd8e302d2c1d501542a4cbded8cadcb4dc04d4
     color: rgb(148, 146, 145);
   }
