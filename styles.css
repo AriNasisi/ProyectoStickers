@@ -27,7 +27,7 @@ nav {
     grid-area: navbar;
     position: sticky;
     top: 0px;
-    z-index: 10;
+    z-index: 17;
 }
 
 #icono {
@@ -155,6 +155,7 @@ a {
     bottom: 13vw;
     transform: rotate(-28deg);
     right: 8vw;
+    z-index: 15;
 
 }
 
@@ -414,5 +415,16 @@ li {
   footer {
     background: rgb(80, 80, 80);
     grid-area: footer;
+
+}
+
+
+#dialogocomic {
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    left:6vw;;
+    top: 35vw;
+    z-index: 14;
 
 }
