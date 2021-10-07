@@ -11,7 +11,7 @@ body {
 .gridcontainer {
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 50px 95vh auto 60px;
+    grid-template-rows: 50px 95vh auto auto;
     grid-template-areas: "navbar navbar navbar"
                         "jumbo jumbo jumbo"
                         "main main main"
@@ -97,7 +97,7 @@ main{
 .gridcontainer2 {
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: auto 100px auto;
+    grid-template-rows: auto 130px auto;
     grid-template-areas: ". main2 ."
                         "empty empty empty"
                         "client client client"
@@ -149,14 +149,27 @@ a {
 
 .ultimos {
     color: black;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: bold;
-    position: relative;
+    position: absolute;
     bottom: 13vw;
     transform: rotate(-28deg);
-    right: 8vw;
-    z-index: 15;
+    left: 180px; 
+    bottom: -110px;
+    z-index: 14;
+    font-family: 'Permanent Marker', cursive;
 
+    
+
+}
+
+#dialogoultimos{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    left: -60px;
+    top: -45px;
+    z-index: -1;
 }
 
 .button{
@@ -309,11 +322,6 @@ li {
     }
 
 }
-    
-
-
-
-
 
 li {
     padding: 2px;
@@ -325,18 +333,32 @@ li {
     background-image: linear-gradient(#8f8e8e, rgba(255, 255, 255, 0.5)), url(fondos/4.jpg);
     background-size: 90%;
     z-index: 1;
-    height: 100vh;
+    height: 45vw;
     width: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     font-weight: bold;
+}
+
+#dialogoclientes{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    left: 1000px;
+    top: 1260px;
+    z-index: 3;
+    transform: rotate(25deg);
 }
 
 .tituloClientes {
     color: black;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: bold;
-    text-align: left;
-    margin-left: 85px;
+    position: absolute;
+    left: 1050px;
+    top: 1300px;
+    transform: rotate(10deg);
+    color: rgb(34, 34, 94);
+    z-index: 4;
 }
 
 
@@ -358,6 +380,7 @@ li {
 .imagenes2:hover {
     transform: scale(1.1);
     transition-duration: 500ms;
+    z-index: 15;
 }
 
 .imagenes2 img {
@@ -413,18 +436,17 @@ li {
 }
 
   footer {
-    background: rgb(80, 80, 80);
+    background: rgb(39, 39, 39);
+    padding: 20px;
     grid-area: footer;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+
 
 }
 
-
-#dialogocomic {
-    width: 25vw;
+.redes {
+    width: 35px;
     height: auto;
-    position: absolute;
-    left:6vw;;
-    top: 35vw;
-    z-index: 14;
-
 }
+
