@@ -15,3 +15,20 @@ document.getElementById("footerjs").innerHTML = `
     <a href="https://facebook.com"><img src="face.png" alt="" class="redes"></a>
     <a href="https://instagram.com"><img src="insta.png" alt="" class="redes"></a>
     `
+
+
+function validateForm() {
+  let x = document.forms["form1"]["formNombre"].value;
+  let y = document.forms["form1"]["formEmail"].value;
+  if (x == "") {
+    alert("Asegurese de completar el campo de Nombre con sus datos!");
+    return false;
+  }
+  if (y == "") {
+    alert("Asegurese de completar el campo de Email con sus datos!");
+    return false;
+  }
+}
+
+
+
