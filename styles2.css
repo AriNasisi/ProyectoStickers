@@ -1,28 +1,49 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
+
     .gridCatalogo {
-        
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas: "lista" 
-                        "stickersCatalogo";
+        grid-template-columns: 25% 75%;
+    }
+    
+    .imagenesCat {
+        
+        height: auto;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        margin: 2vw;
+        width: 25%;
+        
+     
     }
 
     .listita {
-        font-family: 'Roboto', sans-serif;
-        width: 80vw;
-        margin: 4vw;
-        padding: 1vw;
-        background-color: rgba(78, 78, 78, 0.863);
-        border-radius: 15px;
-        box-shadow: 9px 10px 10px 0px rgba(0,0,0,0.6);
-        position:unset;
-        top: 80px;
-        grid-area: lista;
-        height: 490px;
-        grid-area: lista;
-        text-align: center;
-    
+        width: 150px;
     }
+
+    .lineaStickers {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .gridCatalogo {
+        
+        display: grid;
+        
+        grid-template-columns: 100%;
+        /* grid-template-rows: auto auto; */
+        grid-template-areas: "lista" 
+                        "stickersCatalogo";
+        
+    }
+
+    
+    
+    
 
     .imagenesCat {
         
@@ -31,14 +52,14 @@
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 10px;
-        margin-top: 2vw;
+        margin-top: 5vw;
         width: 40%;
      
     }
 
     .listita {
         font-family: 'Roboto', sans-serif;
-        width: 50vw;
+        width: 400px;
         margin: 4vw;
         padding: 1vw;
         background-color: rgba(78, 78, 78, 0.863);
@@ -53,20 +74,10 @@
    
     }
 
-}
-
-@media only screen and (max-width: 850px) {
-    
-    .imagenesCat {
-        
-        height: 50vw;
-        width: auto;
-        background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 10px;
-        margin-top: 2vw;
-        width: 30%;
-     
+    .lineaStickers {
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
+
