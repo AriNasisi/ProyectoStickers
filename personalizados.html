@@ -28,14 +28,14 @@
         <div class="row justify-content-center">
             <div class="col-6">
                 <div class="container">
-                    <form>
+                    <form name="form1">
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Nombre:</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="formNombre" >
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="formEmail" >
                             <div id="emailHelp" class="form-text">No compartiremos tu mail con nadie.</div>
                           </div>
                         <div class="mb-3">
@@ -47,7 +47,7 @@
                             <label for="formFileMultiple" class="form-label">Quiero mi sticker personalizado!</label>
                             <input class="form-control" type="file" id="formFileMultiple" multiple>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" onclick="validateForm()" class="btn btn-primary" name="btnSubmit">Submit</button>
                       </form>
                 </div>
             </div>
