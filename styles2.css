@@ -1,3 +1,7 @@
+/* -------------------------------------------------------------
+Responsive para catalogo
+------------------------------------------------------------- */
+
 @media only screen and (max-width: 850px) {
 
     .gridCatalogo {
@@ -81,3 +85,118 @@
 
 }
 
+/* -------------------------------------------------------------
+Responsive pagina principal
+------------------------------------------------------------- */
+
+@media only screen and (max-width: 850px) {
+
+    .gridcontainer2 {
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: auto 130px auto;
+        grid-template-areas: "main2 main2 main2"
+                            "empty empty empty"
+                            "client client client"                            
+    }
+
+    #dialogoultimos{
+        width: 250px;
+        height: auto;
+        position: absolute;
+        left: -45px;
+        top: -40px;
+        z-index: -1;
+    }
+
+    .carrusel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0vw 2vw 0vw 2vw;
+    }
+
+    .clientes {
+        height: auto;
+        padding-bottom: 2vw;
+        background-size: 200%;
+    }
+
+    #dialogoclientes{
+        width: 250px;
+        height: auto;
+        position: absolute;
+        left: 600px;
+        top: 1130px;
+        z-index: 3;
+        transform: rotate(50deg);
+    }
+
+    .tituloClientes {
+        color: black;
+        /* font-family: 'Roboto', sans-serif; */
+        font-weight: bold;
+        position: absolute;
+        left: 630px;
+        top: 1180px;
+        transform: rotate(33deg);
+        color: rgb(34, 34, 94);
+        z-index: 4;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    #dialogoclientes{
+        display: none;
+    }
+
+    .tituloClientes {
+        color: black;
+        /* font-family: 'Roboto', sans-serif; */
+        font-weight: bold;
+        position: absolute;
+        left: 80px;
+        top: 920px;
+        transform: rotate(0deg);
+        color: rgb(34, 34, 94);
+        text-shadow: 0 0 10px coral, 0 0 10px coral, 0 0 10px coral, 0 0 10px coral;
+        z-index: 4;
+    }
+
+    .espacio{
+        display: none;
+    }
+
+    .ultimos {
+        color: rgb(34, 34, 94);
+        /* font-family: 'Roboto', sans-serif; */
+        font-weight: bold;
+        position: absolute;
+        bottom: 13vw;
+        transform: rotate(0deg);
+        left: 70px; 
+        bottom: -10px;
+        z-index: 14;
+        font-family: 'Permanent Marker', cursive;
+        text-shadow: 0 0 10px coral, 0 0 10px coral, 0 0 10px coral, 0 0 10px coral;
+    }
+    
+    #dialogoultimos{
+        display: none;
+    }
+
+    .titulo {
+        font-family: 'Bangers', cursive;
+        color: white;
+        font-size: 100px;
+        /* font-weight: bold; */
+        text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+        position: absolute;
+        z-index: 2;    
+        top: 90px;
+        left: 10px;
+        text-align: center;
+    }
+
+}

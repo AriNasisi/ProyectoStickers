@@ -90,6 +90,7 @@ header {
     left: 18vw;
 }
 
+
 main{
     grid-area: main;
 }
@@ -250,8 +251,6 @@ li {
 }
 
 
-
-
 li {
     padding: 2px;
 }
@@ -317,6 +316,11 @@ li {
     height: 400px;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: -5px;
+}
+
+iframe {
+    margin-bottom: -5px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 
