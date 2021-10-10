@@ -370,6 +370,7 @@ li {
     grid-area: footer;
     font-family: 'Permanent Marker', cursive;
     text-align: center;
+    color: black;
 
 
 }
@@ -390,4 +391,8 @@ li {
 
 .fondoPersonalizados {
     background-image: linear-gradient(#8f8e8e, rgba(255, 255, 255, 0.5)), url(fondos/1.jpg);
+}
+
+.tituloContacto {
+    font-family: 'Permanent Marker', cursive;
 }
