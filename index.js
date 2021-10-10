@@ -5,7 +5,7 @@ document.getElementById("navbarjs").innerHTML = `
     </div>
     <div>
     <a href="Catalogo.html"><div class="navbar">Catálogo</div></a>
-    <a href="personalizados.html"><div class="navbar">Stickers personalizados</div></a>
+    <a href="personalizados.html"><div class="navbar">Contacto</div></a>
     </div>
     `
 
