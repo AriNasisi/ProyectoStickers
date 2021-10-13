@@ -11,18 +11,17 @@ Responsive para catalogo
     
     .imagenesCat {
         
-        height: auto;
+        height: 42vw;
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 10px;
         margin: 2vw;
         width: 25%;
-        
      
     }
 
     .listita {
-        width: 150px;
+        width: 20vw;
     }
 
     .lineaStickers {
@@ -63,7 +62,7 @@ Responsive para catalogo
 
     .listita {
         font-family: 'Roboto', sans-serif;
-        width: 400px;
+        width: 90vw;
         margin: 4vw;
         padding: 1vw;
         background-color: rgba(78, 78, 78, 0.863);
@@ -155,15 +154,16 @@ Responsive pagina principal
         color: black;
         /* font-family: 'Roboto', sans-serif; */
         font-weight: bold;
-        position: absolute;
-        left: 80px;
-        top: 920px;
+        position: unset;
+        text-align: center;
         transform: rotate(0deg);
         color: rgb(34, 34, 94);
         text-shadow: 0 0 10px coral, 0 0 10px coral, 0 0 10px coral, 0 0 10px coral;
         z-index: 4;
+        
     }
 
+   
     .espacio{
         display: none;
     }
@@ -172,11 +172,11 @@ Responsive pagina principal
         color: rgb(34, 34, 94);
         /* font-family: 'Roboto', sans-serif; */
         font-weight: bold;
-        position: absolute;
+        position: unset;
+        text-align: center;
         bottom: 13vw;
         transform: rotate(0deg);
-        left: 70px; 
-        bottom: -10px;
+        
         z-index: 14;
         font-family: 'Permanent Marker', cursive;
         text-shadow: 0 0 10px coral, 0 0 10px coral, 0 0 10px coral, 0 0 10px coral;
@@ -197,6 +197,10 @@ Responsive pagina principal
         top: 90px;
         left: 10px;
         text-align: center;
+    }
+
+    .imagenes2 {
+        height: auto;
     }
 
 }
