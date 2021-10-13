@@ -29,7 +29,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-sm-12">
                 <div class="container">
-                    <form name="form1">
+                    <form action="" name="form1" method="get">
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Nombre:</label>
                           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="formNombre" >
@@ -41,14 +41,14 @@
                           </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Códigos de stickers:</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="codigoStickers"></textarea>
                             <div id="emailHelp" class="form-text">Separa los códigos con coma, ejemplo: A001, B004.</div>
                         </div>
                         <div class="mb-3">
                             <label for="formFileMultiple" class="form-label">Quiero mi sticker personalizado!</label>
                             <input class="form-control" type="file" id="formFileMultiple" multiple>
                         </div>
-                        <button type="submit" onclick="validateForm()" class="btn btn-primary" name="btnSubmit">Submit</button>
+                        <button type="submit" class="btn btn-primary" name="btnSubmit" id="btn">Submit</button>
                       </form>
                 </div>
             </div>
